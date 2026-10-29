@@ -1,0 +1,1 @@
+# story2-format
