@@ -1,0 +1,29 @@
+# story2 v1
+@title: The Forgotten Crypt
+@author: Alex Mercer
+
+@preview
+The Forgotten Crypt by Alex Mercer
+A dark doorway beckons in the misty forest.
+Will you step inside or turn back?
+Choose wisely to survive the night.
+@end
+
+@scene: intro
+You stand before an ancient stone door covered in glowing moss.
+Cold wind blows from a crack in the frame.
+-> choice: a.) Open the stone door | search
+-> choice: b.) Walk away into the forest | walk_away
+
+@scene: search
+Inside, a spiral staircase leads down into darkness.
+Torchlight flickers ahead, casting strange shadows on the wall.
+-> goto: ending
+
+@scene: walk_away
+You turn back toward the safety of your village.
+The secrets of the crypt remain buried forever.
+-> goto: ending
+
+@scene: ending
+Your story comes to an end.
